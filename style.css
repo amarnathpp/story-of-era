@@ -1831,7 +1831,8 @@ img, video {
 /* Unique WhatsApp Section Design */
 
 .social-links a, .software-icons i {
-  padding-left: 900px;
+  padding-left: 20px;
+  display: inline-block;
   font-size: 40px;
   color: white;
   margin: 0 15px;
