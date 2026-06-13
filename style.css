@@ -1835,6 +1835,8 @@ img, video {
   display: inline-block;
   font-size: 40px;
   color: white;
+  padding: 10px;
+  text-decoration: none;
   margin: 0 15px;
   transition: transform 0.3s ease;
 }
