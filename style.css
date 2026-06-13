@@ -5,7 +5,7 @@
 /* --- CSS custom properties & Design Tokens --- */
 :root {
   --color-bg-base: #081118;          /* Pure obsidian black */
-  --color-bg-surface: #111315;       /* Charcoal Slate Surface */
+  --color-bg-surface: #040405;       /* Charcoal Slate Surface */
   --color-text-primary: #ffffff;      /* Stark Accent White */
   --color-text-muted: #a1a1aa;       /* Platinum / Silver Muted Gray */
   --color-text-dim: #52525b;         /* Deep graphite gray */
@@ -1726,6 +1726,11 @@ section {
   }
 }
 
+/* എല്ലാ ഇമേജുകളെയും വീഡിയോകളെയും ഒറ്റയടിക്ക് കളറിലേക്ക് മാറ്റാനുള്ള മാജിക് കോഡ് */
+img, video {
+    filter: grayscale(0%) !important;
+}
+
 /* --- Mobile (max-width: 600px) --- */
 @media screen and (max-width: 600px) {
   body {
@@ -1816,4 +1821,66 @@ section {
   .form-group select {
     font-size: 0.9rem;
   }
+}
+
+
+
+
+
+
+/* Unique WhatsApp Section Design */
+
+.social-links a, .software-icons i {
+  padding-left: 900px;
+  font-size: 40px;
+  color: white;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover, .software-icons i:hover {
+  color: #ff0055; /* ഹോവർ ചെയ്യുമ്പോൾ നിറം മാറാൻ */
+  transform: scale(1.2);
+}
+.whatsapp-note-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+
+
+
+
+
+.premium-wa-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 25px;
+  background: #fff; /* പ്രീമിയം ലുക്കിന് വേണ്ടി വൈറ്റ് ബാക്ക്ഗ്രൗണ്ട് */
+  color: #000;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  border-radius: 0px; /* നിന്റെ തീമിന് ചേരുന്ന ഷാർപ്പ് എഡ്ജുകൾ */
+}
+
+.premium-wa-btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.premium-wa-btn .btn-icon {
+  transition: transform 0.4s ease;
+}
+
+.premium-wa-btn:hover .btn-icon {
+  transform: translateX(5px);
 }
